@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewTripName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trip Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            tools:text="Morning Bird Watch" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_calendar"
+                android:tint="@color/primary"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginStart="8dp"
+                tools:text="2024-01-15" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_time"
+                android:tint="@color/primary"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginStart="8dp"
+                tools:text="10:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_location"
+                android:tint="@color/primary"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/textViewLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Location"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginStart="8dp"
+                tools:text="Central Park" />
+
+            <TextView
+                android:id="@+id/textViewDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                tools:text="2 hours" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="end">
+
+            <ImageButton
+                android:id="@+id/buttonEdit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_edit"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/edit"
+                app:tint="@color/primary" />
+
+            <ImageButton
+                android:id="@+id/buttonDelete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_delete"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/delete"
+                app:tint="@color/error" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

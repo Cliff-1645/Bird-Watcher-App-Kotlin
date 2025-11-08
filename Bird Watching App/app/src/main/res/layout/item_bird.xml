@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewSpecies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Species"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            tools:text="Robin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_location"
+                android:tint="@color/primary"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/textViewLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Location"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginStart="8dp"
+                tools:text="Near the lake" />
+
+            <TextView
+                android:id="@+id/textViewQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:textStyle="bold"
+                tools:text="3" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            tools:text="Very active, flying around" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="end">
+
+            <ImageButton
+                android:id="@+id/buttonDelete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_delete"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/delete"
+                app:tint="@color/error" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
